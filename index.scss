@@ -1,0 +1,38 @@
+// --- colors --------------------------------------
+$background_color: #E5E5E5;
+$section_color: #FFFFFF;
+$text_background_color: #FFB400;
+$icon_color: #FFB400;
+$header_text_color: #2B2B2B;
+$text_color: #767676;
+$available_color:#7EB942;
+$square_blue: rgba(#0047FFCC, 0.8);
+$triangle_color: rgba(#FF2E00CC, 0.8);
+$circle_color: rgba(#05FF00CC, 0.8);
+$circle_color_2: rgba($text_background_color, 0.8);
+$line_separator_color: #F0F0F6;
+
+// --- elements style -------------------------------
+body {
+    margin: 0;
+    background-color: $background_color;
+}
+
+.section {
+    width: 500px;
+    height: 500px;
+    background-color: $section_color;
+}
+
+.text {
+    color: $text_color;
+}
+
+#main_skill {
+    color: $text_background_color;
+}
+
+#hire {
+    background-color: $text_background_color;
+}
+

@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+  background-color: #E5E5E5;
+}
+
+.section {
+  width: 500px;
+  height: 500px;
+  background-color: #FFFFFF;
+}
+
+.text {
+  color: #767676;
+}
+
+#main_skill {
+  color: #FFB400;
+}
+
+#hire {
+  background-color: #FFB400;
+}
+
+/*# sourceMappingURL=index.css.map */
