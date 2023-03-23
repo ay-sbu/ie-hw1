@@ -1,24 +1,80 @@
 body {
   margin: 0;
   background-color: #E5E5E5;
+  font-family: "inter";
+  font-style: normal;
 }
 
-.section {
-  width: 500px;
-  height: 500px;
-  background-color: #FFFFFF;
-}
-
-.text {
+span {
   color: #767676;
 }
 
-#main_skill {
-  color: #FFB400;
+.section {
+  background-color: #FFFFFF;
+  box-sizing: border-box;
 }
 
-#hire {
+#sidebar {
+  width: 305px;
+  height: 1315px;
+  padding: 50px 45px 25px 40px;
+}
+#sidebar hr {
+  border-top: solid #F0F0F6 0px;
+  margin: 25px auto 25px auto;
+}
+
+#person {
+  display: flex;
+  flex-direction: column;
+}
+#person img {
+  width: 150px;
+  height: 150px;
+  margin: 0px auto 0px auto;
+}
+#person #name {
+  margin: 31px auto 0px auto;
+  color: #2B2B2B;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 123.6%;
+}
+#person #skill {
+  margin: 15px auto 0px auto;
+  color: #767676;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+}
+#person #links {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+#person #links .link-circle {
+  width: 24px;
+  height: 24px;
+  border-radius: 12px;
   background-color: #FFB400;
+}
+#person #links .link-circle .image-container {
+  text-align: center;
+}
+#person #links .link-circle .image-container img {
+  width: 12px;
+  height: 12px;
+  color: red;
+  vertical-align: middle;
+}
+
+#infos {
+  height: 200px;
+  background-color: red;
 }
 
 /*# sourceMappingURL=index.css.map */

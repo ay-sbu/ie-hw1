@@ -12,27 +12,93 @@ $circle_color: rgba(#05FF00CC, 0.8);
 $circle_color_2: rgba($text_background_color, 0.8);
 $line_separator_color: #F0F0F6;
 
+// --- fonts ----------------------------------------
+$main-font-stack: 'inter';
+
 // --- elements style -------------------------------
 body {
     margin: 0;
     background-color: $background_color;
+    font-family: $main-font-stack;
+    font-style: normal;
 }
 
-.section {
-    width: 500px;
-    height: 500px;
-    background-color: $section_color;
-}
-
-.text {
+span {
     color: $text_color;
 }
 
-#main_skill {
-    color: $text_background_color;
+.section {
+    background-color: $section_color;
+    box-sizing: border-box; // :))
 }
 
-#hire {
-    background-color: $text_background_color;
+#sidebar {
+    width: 305px;
+    height: 1315px;
+    padding: 50px 45px 25px 40px;
+
+    hr {
+        border-top: solid $line_separator_color 0px;
+        margin: 25px auto 25px auto;
+    }
 }
 
+#person {
+    display: flex;
+    flex-direction: column;
+
+    img {
+        width: 150px;
+        height: 150px;
+        margin: 0px auto 0px auto;
+    }
+
+    #name {
+        margin: 31px auto 0px auto;
+        color: $header_text_color;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 123.6%;
+    }
+
+    #skill {
+        margin: 15px auto 0px auto;
+        color: $text_color;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 24px;
+    }
+
+    #links {
+        margin-top: 15px;
+        display: flex;
+        justify-content: space-between;
+
+        .link-circle {
+            width: 24px;
+            height: 24px;
+            border-radius: 12px;
+            background-color: $text_background_color;
+
+            .image-container {
+                text-align: center;
+                
+                img {
+                    width: 12px;
+                    height: 12px; 
+                    color: red;
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+}
+
+#infos {
+    height: 200px;
+    background-color: red;
+}
