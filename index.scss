@@ -31,6 +31,7 @@ span {
     width: 500px;
     height: 500px;
     background-color: $section_color;
+    box-sizing: border-box; // :))
 }
 
 #intro {
@@ -39,6 +40,13 @@ span {
     position: absolute;
     right: 21px;
     padding-left: 60px;
+    padding-right: 58px;
+    padding-bottom: 0px;
+    display: flex;
+    // justify-content: space-between;
+}
+
+#intro-left-part {
     display: flex;
     flex-direction: column;
     // justify-content: space-around;
@@ -103,6 +111,15 @@ span {
             margin-left: 12px;
         }
     }
-    
 }
 
+#person {
+    background-color: red;
+    position: relative;
+    margin-left: 5px;
+
+    img {
+        position: absolute;
+        bottom: 0px;
+    }
+}

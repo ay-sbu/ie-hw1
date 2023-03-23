@@ -13,6 +13,7 @@ span {
   width: 500px;
   height: 500px;
   background-color: #FFFFFF;
+  box-sizing: border-box;
 }
 
 #intro {
@@ -21,6 +22,12 @@ span {
   position: absolute;
   right: 21px;
   padding-left: 60px;
+  padding-right: 58px;
+  padding-bottom: 0px;
+  display: flex;
+}
+
+#intro-left-part {
   display: flex;
   flex-direction: column;
 }
@@ -79,6 +86,16 @@ span {
   height: 11px;
   object-fit: cover;
   margin-left: 12px;
+}
+
+#person {
+  background-color: red;
+  position: relative;
+  margin-left: 5px;
+}
+#person img {
+  position: absolute;
+  bottom: 0px;
 }
 
 /*# sourceMappingURL=index.css.map */
