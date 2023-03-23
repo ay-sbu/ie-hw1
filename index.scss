@@ -12,10 +12,19 @@ $circle_color: rgba(#05FF00CC, 0.8);
 $circle_color_2: rgba($text_background_color, 0.8);
 $line_separator_color: #F0F0F6;
 
+// --- fonts ----------------------------------------
+$main-font-stack: 'inter';
+
 // --- elements style -------------------------------
 body {
     margin: 0;
     background-color: $background_color;
+    font-family: $main-font-stack;
+    font-style: normal;
+}
+
+span {
+    color: $text_color;
 }
 
 .section {
@@ -24,15 +33,76 @@ body {
     background-color: $section_color;
 }
 
-.text {
-    color: $text_color;
+#intro {
+    width: 970px;
+    height: 532px;
+    position: absolute;
+    right: 21px;
+    padding-left: 60px;
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-around;
 }
 
-#main_skill {
-    color: $text_background_color;
+#intro-header {
+    width: 550px;
+    height: 135px;
+    margin-top: 106px;
+    padding: 0px;
+
+    span {
+        color: $header_text_color;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 123.6%;
+
+        span {
+            color: $text_background_color;
+        }
+    }
 }
 
-#hire {
+#intro-text {
+    width: 424px;
+    height: 100px;
+    margin-top: 20px;
+
+    span {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+#intro-hire {
+    width: 154px;
+    height: 56px;
+    padding: 0px;
+    margin-top: 28px;
     background-color: $text_background_color;
+    border-radius: 5px;
+    border-style: none;
+    display: flex;
+
+    div {
+        margin-top: 16px;
+        margin-left: 32px;
+        span {
+            position: inherit;
+            color: $header_text_color;
+            font-weight: bold;
+            font-size: 16px;
+            font-family: $main-font-stack;
+        }
+
+        img {
+            width: 11px;
+            height: 11px;
+            object-fit: cover;
+            margin-left: 12px;
+        }
+    }
+    
 }
 
