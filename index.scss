@@ -35,6 +35,31 @@ span {
     box-sizing: border-box; // :))
 }
 
+.header-and-description {
+    text-align: center;
+    font-family: $main-font-stack;
+    margin: 0px auto 50px auto;
+
+    .header {
+        color: $header_text_color;
+        font-family: $main-font-stack;
+        margin-bottom: 25px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 123.6%;
+    }
+
+    .description {
+        width: 440px;
+        color: $text_color;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 24px;
+    }
+}
 
 // --- sections -------------------------------------------
 
@@ -356,5 +381,77 @@ span {
             object-fit: cover;
             margin-left: 12px;
         }
+    }
+}
+
+
+// --- my_services section --------------------------------
+#my_services {
+    margin-top: 600px;
+    background-color: $background_color;
+    width: 970px;
+    height: 532px;
+    position: absolute;
+    right: 21px;
+    padding-bottom: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+#service-blocks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#advertising-service {
+    text-align: center;
+    #service-ad {
+        width: 260px;
+        margin: 22px auto 0px auto;
+    }
+
+    #order-now {
+        color: $text_background_color;
+        margin-top: 20px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 14px;
+    }
+}
+
+.service-block {
+    width: 310px;
+    height: 225px;
+    margin-bottom: 20px;
+    background-color: $section_color;
+    text-align: center;
+
+    img {
+        width: 70px;
+        height: 70px;
+        margin: 28px auto 0px auto;
+    }
+
+    .service-title {
+        color: $header_text_color;
+        margin-top: 26px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 123.6%;
+    }
+
+    .service-description {
+        color: $text_color;
+        margin-top: 15px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 24px;
     }
 }

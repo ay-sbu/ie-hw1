@@ -14,6 +14,30 @@ span {
   box-sizing: border-box;
 }
 
+.header-and-description {
+  text-align: center;
+  font-family: "inter";
+  margin: 0px auto 50px auto;
+}
+.header-and-description .header {
+  color: #2B2B2B;
+  font-family: "inter";
+  margin-bottom: 25px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 123.6%;
+}
+.header-and-description .description {
+  width: 440px;
+  color: #767676;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+}
+
 #intro {
   width: 970px;
   height: 532px;
@@ -291,6 +315,72 @@ span {
   height: 11px;
   object-fit: cover;
   margin-left: 12px;
+}
+
+#my_services {
+  margin-top: 600px;
+  background-color: #E5E5E5;
+  width: 970px;
+  height: 532px;
+  position: absolute;
+  right: 21px;
+  padding-bottom: 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+#service-blocks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#advertising-service {
+  text-align: center;
+}
+#advertising-service #service-ad {
+  width: 260px;
+  margin: 22px auto 0px auto;
+}
+#advertising-service #order-now {
+  color: #FFB400;
+  margin-top: 20px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.service-block {
+  width: 310px;
+  height: 225px;
+  margin-bottom: 20px;
+  background-color: #FFFFFF;
+  text-align: center;
+}
+.service-block img {
+  width: 70px;
+  height: 70px;
+  margin: 28px auto 0px auto;
+}
+.service-block .service-title {
+  color: #2B2B2B;
+  margin-top: 26px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 123.6%;
+}
+.service-block .service-description {
+  color: #767676;
+  margin-top: 15px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
 }
 
 /*# sourceMappingURL=index.css.map */
