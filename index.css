@@ -51,11 +51,12 @@ span {
 
 .dated-blocks {
   background-color: #FFFFFF;
-  padding: 20px 30px 0px 40px;
+  padding: 40px 30px 0px 40px;
+  margin-bottom: 20px;
 }
 .dated-blocks hr {
   border-top: solid #F0F0F6 0px;
-  margin: 10px auto 10px auto;
+  margin: 20px auto 32px auto;
 }
 
 .dated-block {
