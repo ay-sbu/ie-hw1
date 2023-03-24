@@ -34,7 +34,6 @@ span {
 
 #sidebar {
     width: 305px;
-    height: 1315px;
     padding: 50px 45px 25px 40px;
 
     hr {
@@ -90,7 +89,6 @@ span {
                 img {
                     width: 12px;
                     height: 12px; 
-                    color: red;
                     vertical-align: middle;
                 }
             }
@@ -99,6 +97,165 @@ span {
 }
 
 #infos {
-    height: 200px;
-    background-color: red;
+    .infos-fields {
+        height: 126px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .infos-row {
+            display: flex;
+            justify-content: space-between;
+            
+            .key {
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 24px;
+                height: 24px;
+                padding: 0px 6px 0px 5px;
+                background-color: $text_background_color;
+            }
+
+            .value {
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 24px;
+            }
+
+        }
+    }
 }
+
+#available {
+    color: $available_color;
+}
+
+.part-header {
+    color: $header_text_color;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 123.6%;
+}
+
+#lang-advanced {
+    transform: translate(22px, 1px);
+}
+
+#lang-native {
+    transform: translateX(5px);
+}
+
+#language {
+    .part-header {
+        margin-bottom: 15px;
+    }
+
+    #language-fields {
+        display: flex;
+        flex-direction: column;
+
+        .language-row {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            margin-bottom: 18px;
+            
+            .key {
+                color: $text_color;
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 24px;
+            }
+
+            .value {
+                color: $text_color;
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 24px;
+            }
+        }
+    }
+}
+
+#contacts {
+    .part-header {
+        margin-bottom: 40px;
+    }
+
+    table tr td {
+        color: $text_color;
+        height: 44px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 24px;
+    }
+
+    table tr td:nth-child(2) {
+        transform: translateX(20px);
+    }  
+}
+
+#skills {
+    .part-header {
+        margin-bottom: 15px;
+    }
+
+    ul {
+        list-style-image: url(icons/Icons.svg);
+        padding-left: 1em;
+
+        li span {
+            position: relative;
+            left: +15px;
+            color: $text_color;
+            height: 44px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 24px;
+        }
+    }
+}
+
+#download-cv {
+    height: 40px;
+    background-color: $text_background_color;
+    display: flex;
+
+    div {
+        margin-top: 10px;
+        margin-left: 40px;
+        span {
+            position: inherit;
+            color: $header_text_color;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 17px;
+            text-transform: uppercase;
+        }
+
+        img {
+            width: 11px;
+            height: 11px;
+            object-fit: cover;
+            margin-left: 12px;
+        }
+    }
+}
+
+

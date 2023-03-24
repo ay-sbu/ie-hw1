@@ -16,7 +16,6 @@ span {
 
 #sidebar {
   width: 305px;
-  height: 1315px;
   padding: 50px 45px 25px 40px;
 }
 #sidebar hr {
@@ -68,13 +67,147 @@ span {
 #person #links .link-circle .image-container img {
   width: 12px;
   height: 12px;
-  color: red;
   vertical-align: middle;
 }
 
-#infos {
-  height: 200px;
-  background-color: red;
+#infos .infos-fields {
+  height: 126px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#infos .infos-fields .infos-row {
+  display: flex;
+  justify-content: space-between;
+}
+#infos .infos-fields .infos-row .key {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  height: 24px;
+  padding: 0px 6px 0px 5px;
+  background-color: #FFB400;
+}
+#infos .infos-fields .infos-row .value {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+#available {
+  color: #7EB942;
+}
+
+.part-header {
+  color: #2B2B2B;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 123.6%;
+}
+
+#lang-advanced {
+  transform: translate(22px, 1px);
+}
+
+#lang-native {
+  transform: translateX(5px);
+}
+
+#language .part-header {
+  margin-bottom: 15px;
+}
+#language #language-fields {
+  display: flex;
+  flex-direction: column;
+}
+#language #language-fields .language-row {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-bottom: 18px;
+}
+#language #language-fields .language-row .key {
+  color: #767676;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+}
+#language #language-fields .language-row .value {
+  color: #767676;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+#contacts .part-header {
+  margin-bottom: 40px;
+}
+#contacts table tr td {
+  color: #767676;
+  height: 44px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+}
+#contacts table tr td:nth-child(2) {
+  transform: translateX(20px);
+}
+
+#skills .part-header {
+  margin-bottom: 15px;
+}
+#skills ul {
+  list-style-image: url(icons/Icons.svg);
+  padding-left: 1em;
+}
+#skills ul li span {
+  position: relative;
+  left: 15px;
+  color: #767676;
+  height: 44px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+#download-cv {
+  height: 40px;
+  background-color: #FFB400;
+  display: flex;
+}
+#download-cv div {
+  margin-top: 10px;
+  margin-left: 40px;
+}
+#download-cv div span {
+  position: inherit;
+  color: #2B2B2B;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+}
+#download-cv div img {
+  width: 11px;
+  height: 11px;
+  object-fit: cover;
+  margin-left: 12px;
 }
 
 /*# sourceMappingURL=index.css.map */
