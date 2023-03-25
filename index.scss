@@ -62,13 +62,17 @@ span {
 }
 
 // --- sections -------------------------------------------
+#sections-without-sidebar {
+    width: 970px;
+    position: absolute;
+    right: 21px;
+    display: flex;
+    flex-direction: column;
+}
 
 // --- intro section --------------------------------------
 #intro {
-    width: 970px;
     height: 532px;
-    position: absolute;
-    right: 21px;
     padding-left: 60px;
     padding-right: 58px;
     padding-bottom: 0px;
@@ -387,13 +391,8 @@ span {
 
 // --- my_services section --------------------------------
 #my_services {
-    margin-top: 600px;
     background-color: $background_color;
-    width: 970px;
-    height: 532px;
-    position: absolute;
-    right: 21px;
-    padding-bottom: 0px;
+    padding-top: 60px;
     display: flex;
     flex-direction: column;
 }
@@ -456,22 +455,17 @@ span {
     }
 }
 
-// --- education section ----------------------------------
-#education {
-    margin-top: 1300px;
+// --- dated-list section ----------------------------------
+.dated-list {
     background-color: $background_color;
-    width: 970px;
-    height: 532px;
-    position: absolute;
-    right: 21px;
-    padding-bottom: 0px;
+    padding-top: 60px;
     display: flex;
     flex-direction: column;
 }
 
 .dated-blocks {
     background-color: $section_color;
-    padding: 40px 30px 0px 40px;
+    padding: 40px 30px 20px 40px;
     margin-bottom: 20px;
 
     hr {
@@ -536,3 +530,11 @@ span {
     }
     
 }
+
+// #educatoin {
+//     padding-top: 1900px;
+// }
+
+// #work_history {
+//     padding-top: 1300px;
+// }
