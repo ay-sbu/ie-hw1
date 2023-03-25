@@ -186,6 +186,20 @@ span {
   vertical-align: middle;
 }
 
+#available-circle {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 166px;
+  left: 198px;
+  border-radius: 8px;
+}
+#available-circle img {
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+}
+
 #infos .infos-fields {
   height: 126px;
   display: flex;
