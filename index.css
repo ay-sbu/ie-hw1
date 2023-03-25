@@ -38,6 +38,10 @@ span {
   line-height: 24px;
 }
 
+.icon-filter {
+  filter: invert(65%) sepia(96%) saturate(939%) hue-rotate(355deg) brightness(100%) contrast(106%);
+}
+
 #sections-without-sidebar {
   width: 970px;
   position: absolute;
