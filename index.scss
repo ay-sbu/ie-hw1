@@ -455,3 +455,84 @@ span {
         line-height: 24px;
     }
 }
+
+// --- education section ----------------------------------
+#education {
+    margin-top: 1300px;
+    background-color: $background_color;
+    width: 970px;
+    height: 532px;
+    position: absolute;
+    right: 21px;
+    padding-bottom: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.dated-blocks {
+    background-color: $section_color;
+    padding: 40px 30px 0px 40px;
+    margin-bottom: 20px;
+
+    hr {
+        border-top: solid $line_separator_color 0px;
+        margin: 20px auto 32px auto;
+    }
+}
+
+.dated-block {
+    vertical-align: top;
+    
+    tr td {
+        vertical-align: top;
+        height: 50px;
+    }
+
+    tr:first-child {
+        color: $header_text_color;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 123.6%;
+    }
+
+    tr:last-child td:first-child {
+        width: 365px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 24px;
+        display: flex;
+        
+        #dated-date {
+            justify-content: center;
+            float: left;
+            background-color: $text_background_color;
+            text-align: center;
+            width: 110px;
+            height: 18px;
+            transform: translate(21px, 2px);
+            
+            div {
+                color: $section_color;
+                margin-top: 5px;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 10px;
+                line-height: 100.9%;
+            }
+        }
+    }
+
+    tr:last-child td:last-child {
+        color: $text_color;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 24px;
+    }
+    
+}
