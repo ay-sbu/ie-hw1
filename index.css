@@ -131,7 +131,7 @@ span {
   padding: 50px 45px 25px 40px;
 }
 #sidebar hr {
-  border-top: solid #F0F0F6 0px;
+  border-top: solid #F0F0F6 1.5px;
   margin: 25px auto 25px auto;
 }
 
@@ -396,7 +396,7 @@ span {
   margin-bottom: 20px;
 }
 .dated-blocks hr {
-  border-top: solid #F0F0F6 0px;
+  border-top: solid #F0F0F6 1.5px;
   margin: 20px auto 32px auto;
 }
 
