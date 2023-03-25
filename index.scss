@@ -1,71 +1,12 @@
-// --- colors ---------------------------------------------
-$background_color: #E5E5E5;
-$section_color: #FFFFFF;
-$text_background_color: #FFB400;
-$icon_color: #FFB400;
-$header_text_color: #2B2B2B;
-$text_color: #767676;
-$available_color:#7EB942;
-$square_blue: rgba(#0047FFCC, 0.8);
-$triangle_color: rgba(#FF2E00CC, 0.8);
-$circle_color: rgba(#05FF00CC, 0.8);
-$circle_color_2: rgba($text_background_color, 0.8);
-$line_separator_color: #F0F0F6;
-
-// --- fonts ----------------------------------------------
-$main-font-stack: 'inter';
+@use "variables";
 
 // --- elements style -------------------------------------
 
-
-// --- globals --------------------------------------------
-body {
-    margin: 0;
-    background-color: $background_color;
-    font-family: $main-font-stack;
-    font-style: normal;
-}
-
-span {
-    color: $text_color;
-}
-
-.section {
-    background-color: $section_color;
-    box-sizing: border-box; // :))
-}
-
-.header-and-description {
-    text-align: center;
-    font-family: $main-font-stack;
-    margin: 0px auto 50px auto;
-
-    .header {
-        color: $header_text_color;
-        font-family: $main-font-stack;
-        margin-bottom: 25px;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 32px;
-        line-height: 123.6%;
-    }
-
-    .description {
-        width: 440px;
-        color: $text_color;
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 15px;
-        line-height: 24px;
-    }
-}
-
 // --- sections -------------------------------------------
 #sections-without-sidebar {
-    width: 970px;
+    width: 72%;
     position: absolute;
-    right: 21px;
+    right: 1%;
     display: flex;
     flex-direction: column;
 }
@@ -77,30 +18,27 @@ span {
     padding-right: 58px;
     padding-bottom: 0px;
     display: flex;
-    // justify-content: space-between;
 }
 
 #intro-left-part {
     display: flex;
     flex-direction: column;
-    // justify-content: space-around;
 }
 
 #intro-header {
-    width: 550px;
+    width: 500px;
     height: 135px;
     margin-top: 106px;
-    padding: 0px;
 
     span {
-        color: $header_text_color;
+        color: variables.$header_text_color;
         font-style: normal;
         font-weight: 700;
         font-size: 48px;
         line-height: 123.6%;
 
         span {
-            color: $text_background_color;
+            color: variables.$text_background_color;
         }
     }
 }
@@ -122,7 +60,7 @@ span {
     height: 56px;
     padding: 0px;
     margin-top: 28px;
-    background-color: $text_background_color;
+    background-color: variables.$text_background_color;
     border-radius: 5px;
     border-style: none;
     display: flex;
@@ -132,10 +70,10 @@ span {
         margin-left: 32px;
         span {
             position: inherit;
-            color: $header_text_color;
+            color: variables.$header_text_color;
             font-weight: bold;
             font-size: 16px;
-            font-family: $main-font-stack;
+            font-family: variables.$main-font-stack;
         }
 
         img {
@@ -144,6 +82,12 @@ span {
             object-fit: cover;
             margin-left: 12px;
         }
+    }
+}
+
+@media only screen and (max-width: variables.$person-hidden-width) {
+    #intro-person {
+        visibility: hidden;
     }
 }
 
@@ -157,9 +101,33 @@ span {
     }
 }
 
-
-
 // --- sidebar section ------------------------------------
+@media only screen and (max-width: variables.$sidebar-hidden-width) {
+    #sidebar {
+        visibility: hidden;
+    }
+    
+    #sections-without-sidebar {
+        width: 80%;
+        position: relative;
+        margin: 0px auto 0px auto;
+        right: 1%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #service-block {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #service-blocks {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+}
+
 #sidebar {
     position: absolute;
     left: 0px;
@@ -167,7 +135,7 @@ span {
     padding: 50px 45px 25px 40px;
 
     hr {
-        border-top: solid $line_separator_color 1.5px;
+        border-top: solid variables.$line_separator_color 1.5px;
         margin: 25px auto 25px auto;
     }
 }
@@ -184,7 +152,7 @@ span {
 
     #name {
         margin: 31px auto 0px auto;
-        color: $header_text_color;
+        color: variables.$header_text_color;
         font-family: 'Inter';
         font-style: normal;
         font-weight: 500;
@@ -194,7 +162,7 @@ span {
 
     #skill {
         margin: 15px auto 0px auto;
-        color: $text_color;
+        color: variables.$text_color;
         font-family: 'Inter';
         font-style: normal;
         font-weight: 400;
@@ -211,7 +179,7 @@ span {
             width: 24px;
             height: 24px;
             border-radius: 12px;
-            background-color: $text_background_color;
+            background-color: variables.$text_background_color;
 
             .image-container {
                 text-align: center;
@@ -223,6 +191,20 @@ span {
                 }
             }
         }
+    }
+}
+
+#available-circle {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 166px;
+    left: 198px;
+    border-radius: 8px;
+    img {
+        width: 100%;
+        height: 100%;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
     }
 }
 
@@ -245,7 +227,7 @@ span {
                 line-height: 24px;
                 height: 24px;
                 padding: 0px 6px 0px 5px;
-                background-color: $text_background_color;
+                background-color: variables.$text_background_color;
             }
 
             .value {
@@ -261,11 +243,11 @@ span {
 }
 
 #available {
-    color: $available_color;
+    color: variables.$available_color;
 }
 
 .part-header {
-    color: $header_text_color;
+    color: variables.$header_text_color;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
@@ -297,7 +279,7 @@ span {
             margin-bottom: 18px;
             
             .key {
-                color: $text_color;
+                color: variables.$text_color;
                 font-family: 'Inter';
                 font-style: normal;
                 font-weight: 400;
@@ -306,7 +288,7 @@ span {
             }
 
             .value {
-                color: $text_color;
+                color: variables.$text_color;
                 font-family: 'Inter';
                 font-style: normal;
                 font-weight: 400;
@@ -323,7 +305,7 @@ span {
     }
 
     table tr td {
-        color: $text_color;
+        color: variables.$text_color;
         height: 44px;
         font-family: 'Inter';
         font-style: normal;
@@ -343,13 +325,13 @@ span {
     }
 
     ul {
-        list-style-image: url(icons/Icons.svg);
+        list-style-image: url(icons/item-bullet.svg);
         padding-left: 1em;
 
         li span {
             position: relative;
             left: +15px;
-            color: $text_color;
+            color: variables.$text_color;
             height: 44px;
             font-family: 'Inter';
             font-style: normal;
@@ -362,7 +344,7 @@ span {
 
 #download-cv {
     height: 40px;
-    background-color: $text_background_color;
+    background-color: variables.$text_background_color;
     display: flex;
 
     div {
@@ -370,7 +352,7 @@ span {
         margin-left: 40px;
         span {
             position: inherit;
-            color: $header_text_color;
+            color: variables.$header_text_color;
             font-family: 'Inter';
             font-style: normal;
             font-weight: 600;
@@ -388,10 +370,9 @@ span {
     }
 }
 
-
 // --- my_services section --------------------------------
 #my_services {
-    background-color: $background_color;
+    background-color: variables.$background_color;
     padding-top: 60px;
     display: flex;
     flex-direction: column;
@@ -400,7 +381,7 @@ span {
 #service-blocks {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 #advertising-service {
@@ -411,7 +392,7 @@ span {
     }
 
     #order-now {
-        color: $text_background_color;
+        color: variables.$text_background_color;
         margin-top: 20px;
         font-family: 'Inter';
         font-style: normal;
@@ -425,7 +406,7 @@ span {
     width: 310px;
     height: 225px;
     margin-bottom: 20px;
-    background-color: $section_color;
+    background-color: variables.$section_color;
     text-align: center;
 
     img {
@@ -435,7 +416,7 @@ span {
     }
 
     .service-title {
-        color: $header_text_color;
+        color: variables.$header_text_color;
         margin-top: 26px;
         font-family: 'Inter';
         font-style: normal;
@@ -445,7 +426,7 @@ span {
     }
 
     .service-description {
-        color: $text_color;
+        color: variables.$text_color;
         margin-top: 15px;
         font-family: 'Inter';
         font-style: normal;
@@ -457,19 +438,19 @@ span {
 
 // --- dated-list section ----------------------------------
 .dated-list {
-    background-color: $background_color;
+    background-color: variables.$background_color;
     padding-top: 60px;
     display: flex;
     flex-direction: column;
 }
 
 .dated-blocks {
-    background-color: $section_color;
+    background-color: variables.$section_color;
     padding: 40px 30px 20px 40px;
     margin-bottom: 20px;
 
     hr {
-        border-top: solid $line_separator_color 1.5px;
+        border-top: solid variables.$line_separator_color 1.5px;
         margin: 20px auto 32px auto;
     }
 }
@@ -483,7 +464,7 @@ span {
     }
 
     tr:first-child {
-        color: $header_text_color;
+        color: variables.$header_text_color;
         font-family: 'Inter';
         font-style: normal;
         font-weight: 500;
@@ -491,8 +472,12 @@ span {
         line-height: 123.6%;
     }
 
+    tr td:first-child {
+        width: 36%;
+    }
+
     tr:last-child td:first-child {
-        width: 365px;
+        width: auto;
         font-family: 'Inter';
         font-style: normal;
         font-weight: 400;
@@ -502,15 +487,14 @@ span {
         
         #dated-date {
             justify-content: center;
-            float: left;
-            background-color: $text_background_color;
+            background-color: variables.$text_background_color;
             text-align: center;
             width: 110px;
             height: 18px;
             transform: translate(21px, 2px);
             
             div {
-                color: $section_color;
+                color: variables.$section_color;
                 margin-top: 5px;
                 font-style: normal;
                 font-weight: 400;
@@ -521,20 +505,11 @@ span {
     }
 
     tr:last-child td:last-child {
-        color: $text_color;
+        color: variables.$text_color;
         font-family: 'Inter';
         font-style: normal;
         font-weight: 400;
         font-size: 15px;
         line-height: 24px;
     }
-    
 }
-
-// #educatoin {
-//     padding-top: 1900px;
-// }
-
-// #work_history {
-//     padding-top: 1300px;
-// }
