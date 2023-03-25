@@ -1,0 +1,63 @@
+// --- colors ---------------------------------------------
+$background_color: #E5E5E5;
+$section_color: #FFFFFF;
+$text_background_color: #FFB400;
+$icon_color: #FFB400;
+$header_text_color: #2B2B2B;
+$text_color: #767676;
+$available_color:#7EB942;
+$square_blue: rgba(#0047FFCC, 0.8);
+$triangle_color: rgba(#FF2E00CC, 0.8);
+$circle_color: rgba(#05FF00CC, 0.8);
+$circle_color_2: rgba($text_background_color, 0.8);
+$line_separator_color: #F0F0F6;
+
+// --- fonts ----------------------------------------------
+$main-font-stack: 'inter';
+
+// --- globals --------------------------------------------
+body {
+    margin: 0;
+    background-color: $background_color;
+    font-family: $main-font-stack;
+    font-style: normal;
+}
+
+span {
+    color: $text_color;
+}
+
+.section {
+    background-color: $section_color;
+    box-sizing: border-box; // :))
+}
+
+.header-and-description {
+    text-align: center;
+    font-family: $main-font-stack;
+    margin: 0px auto 50px auto;
+
+    .header {
+        color: $header_text_color;
+        font-family: $main-font-stack;
+        margin-bottom: 25px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 123.6%;
+    }
+
+    .description {
+        width: 440px;
+        color: $text_color;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 24px;
+    }
+}
+
+.icon-filter{
+    filter: invert(65%) sepia(96%) saturate(939%) hue-rotate(355deg) brightness(100%) contrast(106%);
+}
