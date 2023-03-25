@@ -281,7 +281,7 @@ span {
   margin-bottom: 15px;
 }
 #skills ul {
-  list-style-image: url(icons/Icons.svg);
+  list-style-image: url(icons/item-bullet.svg);
   padding-left: 1em;
 }
 #skills ul li span {
