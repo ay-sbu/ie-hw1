@@ -33,7 +33,7 @@ npm install -g sass
 
 #### Clone repository in your local
 ```
-git clone https://github.com/abbasyazdanmehr/IE_HW1
+git clone https://github.com/ay-sbu/ie-hw1
 ```
 
 #### Watch Compile `.scss` file
@@ -82,6 +82,6 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 Abbas Yazdanmehr - [Telegram](https://t.me/Abbas_Yazdanmehr) - abbas.yazdanmehr1@gmail.com
 
-Project Link: [https://github.com/abbasyazdanmehr/IE_HW1](https://github.com/abbasyazdanmehr/IE_HW1)
+Project Link: [https://github.com/ay-sbu/ie-hw1](https://github.com/ay-sbu/ie-hw1)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
